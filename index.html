@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um Pix</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        img { width: 200px; margin: 20px 0; }
+        .pix-code { font-size: 18px; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h2>Envie um Pix para mim!</h2>
+    <p>Escaneie o QR Code ou copie o código abaixo:</p>
+    
+    <img src="qrcode.png" alt="QR Code do Pix">
+    
+    <p class="pix-code"><strong>Código Pix:</strong> 00020101021126580014br.gov.bcb.pix01369c5387ea-c987-4dce-8298-b9326247c1515204000053039865802BR5917CARLOS T F FREIRE6011JOAO PESSOA62070503***6304F379</p>
+    
+    <p>Clique para copiar: <button onclick="copyPix()">Copiar</button></p>
+
+    <script>
+        function copyPix() {
+            navigator.clipboard.writeText("00020126330014BR.GOV.BCB.PIX...");
+            alert("Código Pix copiado!");
+        }
+    </script>
+</body>
+</html>
